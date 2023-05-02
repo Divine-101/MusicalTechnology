@@ -60,7 +60,19 @@ Takes one thing and splits it into 2. used to split argencad at forst. At later 
 
 ### Instruments
 
-These will be mostly cosmetic and just for fun.
+Instruments will be the "weapons" added by the pack. They will create sound when used to attack opponents. There are different tiers of instruments based on the materials that are availible.
+
+#### Boomwhacker
+
+This will be a basic sword that does the same damage as a stone sword. However, when it is swung, it will also create noise, which will damage mobs nearby.
+
+#### Percussion Instruments
+
+These will be availible early on. They will do large amounts of damage, but also have a big cooldown.
+
+#### Brass instruments
+
+These will be ranged weapons. They can also be made of silver for extra attack damage.
 
 ### 
 
