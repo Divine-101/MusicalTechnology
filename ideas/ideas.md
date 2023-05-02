@@ -42,14 +42,14 @@ Around mid-game, machines will have built-in speakers to generate noise.
 
 Now for a list of machines to be made!
 
-##### Sound Smelter
+#### Sound Smelter
 
 By introducing noise to amethyst, and having that noise bounce between different crystals, heat is generated, smelting materials. Works as a furnace.
 
-##### Polisher
+#### Polisher
 
 Does not require noise to run. Does need a source of water. This machine will turn amethyst crystals into their polished form. Can also be used for some other recipes involving ore processing...
 
-##### Crusher
+#### Crusher
 
 Crushes things using sound. idk
