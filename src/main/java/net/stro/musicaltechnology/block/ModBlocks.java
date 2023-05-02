@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,7 +25,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ARGENCAD_ORE = registerBlock("argencad_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 3f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DEEPSLATE_ARGENCAD_ORE = registerBlock("deepslate_argencad_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 3f).requiresCorrectToolForDrops()));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
