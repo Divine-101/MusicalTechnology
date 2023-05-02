@@ -1,6 +1,9 @@
 {
   "item.musicaltechnology.zinc_ingot": "Zinc Ingot",
   "item.musicaltechnology.raw_argencad": "Raw Argencad",
+  "block.musicaltechnology.argencad_ore":  "Argencad Ore",
+  "block.musicaltechnology.deepslate_argencad_ore":  "Deepslate Argencad Ore",
+  "block.musicaltechnology.zinc_block":  "Block of Zinc",
 
   "creativemodetab.musical_tech_tab": "Musical Technology"
 }

@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.stro.musicaltechnology.block.ModBlocks;
 import net.stro.musicaltechnology.item.ModCreativeModeTabs;
 import net.stro.musicaltechnology.item.ModItems;
 import org.slf4j.Logger;
@@ -25,6 +26,7 @@ public class MusicalTechnology {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -41,9 +43,19 @@ public class MusicalTechnology {
             event.accept(ModItems.ZINC_INGOT);
             event.accept(ModItems.RAW_ARGENCAD);
         }
+        if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.ZINC_BLOCK);
+        }
+        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.ARGENCAD_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ARGENCAD_ORE);
+        }
         if(event.getTab() == ModCreativeModeTabs.MUSICAL_TECH_TAB) {
             event.accept(ModItems.ZINC_INGOT);
+            event.accept(ModBlocks.ZINC_BLOCK);
             event.accept(ModItems.RAW_ARGENCAD);
+            event.accept(ModBlocks.ARGENCAD_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ARGENCAD_ORE);
         }
     }
 
