@@ -22,3 +22,5 @@ Lower frequency means items will be transported slower, but will be able to be t
 Higher frequency means items will be transported faster, but will not be able to be transported for long distances.
 
 Waves will also have a decibel values which will start low but can be upgraded. This will increase the base value for distance.
+
+Formula will be made later.
