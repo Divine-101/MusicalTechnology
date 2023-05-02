@@ -53,3 +53,14 @@ Does not require noise to run. Does need a source of water. This machine will tu
 #### Crusher
 
 Crushes things using sound. idk
+
+#### Splitter
+
+Takes one thing and splits it into 2. used to split argencad at forst. At later stages acts as an uncrafting table.
+
+### Instruments
+
+These will be mostly cosmetic and just for fun.
+
+### 
+
