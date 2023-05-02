@@ -1,3 +1,6 @@
 {
-  "item.musicaltechnology.zinc_ingot": "Zinc Ingot"
+  "item.musicaltechnology.zinc_ingot": "Zinc Ingot",
+  "item.musicaltechnology.raw_argencad": "Raw Argencad",
+
+  "creativemodetab.musical_tech_tab": "Musical Technology"
 }

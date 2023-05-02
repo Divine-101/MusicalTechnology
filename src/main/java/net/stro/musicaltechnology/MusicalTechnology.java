@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.stro.musicaltechnology.item.ModCreativeModeTabs;
 import net.stro.musicaltechnology.item.ModItems;
 import org.slf4j.Logger;
 
@@ -38,6 +39,11 @@ public class MusicalTechnology {
     private void addCreative(CreativeModeTabEvent.BuildContents event){
         if(event.getTab() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ZINC_INGOT);
+            event.accept(ModItems.RAW_ARGENCAD);
+        }
+        if(event.getTab() == ModCreativeModeTabs.MUSICAL_TECH_TAB) {
+            event.accept(ModItems.ZINC_INGOT);
+            event.accept(ModItems.RAW_ARGENCAD);
         }
     }
 
