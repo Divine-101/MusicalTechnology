@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "musicaltechnology:block/zinc_block"
+    }
+  }
+}

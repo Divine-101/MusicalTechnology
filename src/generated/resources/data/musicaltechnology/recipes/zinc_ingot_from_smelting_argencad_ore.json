@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "zinc_ingot",
+  "ingredient": {
+    "item": "musicaltechnology:argencad_ore"
+  },
+  "result": "musicaltechnology:zinc_ingot"
+}
