@@ -23,7 +23,9 @@ Higher frequency means items will be transported faster, but will not be able to
 
 Waves will also have a decibel values which will start low but can be upgraded. This will increase the base value for distance.
 
-Formula will be made later.
+Formula: Hz = Items/s^2, Max distance = sqrt(Hz)+items/s
+
+maybe.
 
 There are also "Waveform Relay" blocks that will reset the maximum distance and allow multiple waveforms to be attatched. (only one waveform can be attatched per transport node.)
 
@@ -54,9 +56,15 @@ Does not require noise to run. Does need a source of water. This machine will tu
 
 Crushes things using sound. idk
 
-#### Splitter
+### Ore Processing
 
-Takes one thing and splits it into 2. used to split argencad at forst. At later stages acts as an uncrafting table.
+1x - just smelting
+
+2x - Enrich one raw ore into 2 dust, then smelt the dust
+
+3x - Crush one raw ore into 3 mixed dust, separate it using a centrifuge with water into stone dust and clean ore dust, then smelt the dust into ingots.
+
+4x - something, polish, smelt, eoiawnofnweaovfnomawfm
 
 ### Instruments
 
