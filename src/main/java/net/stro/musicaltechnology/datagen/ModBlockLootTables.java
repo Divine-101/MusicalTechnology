@@ -18,6 +18,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.ZINC_BLOCK.get());
+        dropSelf(ModBlocks.PLACEHOLDER.get());
         add(ModBlocks.ARGENCAD_ORE.get(), (block) -> createOreDrop(ModBlocks.ARGENCAD_ORE.get(), ModItems.RAW_ARGENCAD.get()));
         add(ModBlocks.DEEPSLATE_ARGENCAD_ORE.get(), (block) -> createOreDrop(ModBlocks.DEEPSLATE_ARGENCAD_ORE.get(), ModItems.RAW_ARGENCAD.get()));
     }

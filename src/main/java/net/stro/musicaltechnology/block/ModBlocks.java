@@ -21,11 +21,13 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, MusicalTechnology.MOD_ID);
 
     public static final RegistryObject<Block> ZINC_BLOCK = registerBlock("zinc_block",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final RegistryObject<Block> ARGENCAD_ORE = registerBlock("argencad_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 3f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DEEPSLATE_ARGENCAD_ORE = registerBlock("deepslate_argencad_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> PLACEHOLDER = registerBlock("placeholder",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0f, 0f).sound(SoundType.SCULK)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

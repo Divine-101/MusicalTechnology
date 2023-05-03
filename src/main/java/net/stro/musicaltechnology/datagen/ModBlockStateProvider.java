@@ -18,6 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ZINC_BLOCK);
         blockWithItem(ModBlocks.ARGENCAD_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ARGENCAD_ORE);
+        blockWithItem(ModBlocks.PLACEHOLDER);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
