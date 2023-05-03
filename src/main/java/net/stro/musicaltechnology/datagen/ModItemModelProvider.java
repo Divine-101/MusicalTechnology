@@ -19,6 +19,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.ZINC_INGOT);
         simpleItem(ModItems.RAW_ARGENCAD);
+        simpleItem(ModItems.BOOMWHACKER);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

@@ -50,12 +50,16 @@ public class MusicalTechnology {
             event.accept(ModBlocks.ARGENCAD_ORE);
             event.accept(ModBlocks.DEEPSLATE_ARGENCAD_ORE);
         }
+        if(event.getTab() == CreativeModeTabs.COMBAT){
+            event.accept(ModItems.BOOMWHACKER);
+        }
         if(event.getTab() == ModCreativeModeTabs.MUSICAL_TECH_TAB) {
             event.accept(ModItems.ZINC_INGOT);
             event.accept(ModBlocks.ZINC_BLOCK);
             event.accept(ModItems.RAW_ARGENCAD);
             event.accept(ModBlocks.ARGENCAD_ORE);
             event.accept(ModBlocks.DEEPSLATE_ARGENCAD_ORE);
+            event.accept(ModItems.BOOMWHACKER);
         }
     }
 
