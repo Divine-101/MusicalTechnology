@@ -1,5 +1,6 @@
-// 1.19.4	2023-05-02T20:19:05.6691904	Loot Tables
+// 1.19.4	2023-05-03T20:26:23.8983274	Loot Tables
 e086d2b8391f3d0255230dd63df3ec7a3d584386 data/musicaltechnology/loot_tables/blocks/argencad_ore.json
 f70a321ab9a712ab4254240e8958beddf6ea3f36 data/musicaltechnology/loot_tables/blocks/deepslate_argencad_ore.json
+898643937b1101221fef2f127897b89805c1dbc6 data/musicaltechnology/loot_tables/blocks/percussive_casing.json
 c617f5e70d5e1f384ee3eef1c305c749fcaba21e data/musicaltechnology/loot_tables/blocks/placeholder.json
 935846e624fbe85e9f040cdae693263ad260a9a2 data/musicaltechnology/loot_tables/blocks/zinc_block.json

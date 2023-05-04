@@ -28,6 +28,9 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final RegistryObject<Block> PLACEHOLDER = registerBlock("placeholder",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0f, 0f).sound(SoundType.SCULK)));
+    public static final RegistryObject<Block> PERCUSSIVE_CASING = registerBlock("percussive_casing",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(3f, 3f).sound(SoundType.WOOD)));
+
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

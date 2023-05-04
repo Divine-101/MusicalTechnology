@@ -19,6 +19,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ARGENCAD_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ARGENCAD_ORE);
         blockWithItem(ModBlocks.PLACEHOLDER);
+        blockWithItem(ModBlocks.PERCUSSIVE_CASING);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

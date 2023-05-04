@@ -1,9 +1,10 @@
 package net.stro.musicaltechnology.datagen;
 
-import com.mojang.datafixers.kinds.IdF;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -38,6 +39,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModItems.ZINC_INGOT.get(), 0.7f, 200, "zinc_ingot");
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.ZINC_INGOT.get(),
                 RecipeCategory.MISC, ModBlocks.ZINC_BLOCK.get());
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PERCUSSIVE_CASING.get()).define('W', ItemTags.PLANKS)
+                .define('L', Items.LEATHER).define('A', Items.AMETHYST_SHARD).pattern("WLW").pattern("LAL").pattern("WLW")
+                .unlockedBy("has_amethyst_shard", has(Items.AMETHYST_SHARD)).save(consumer);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {

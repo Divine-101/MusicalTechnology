@@ -60,6 +60,7 @@ public class MusicalTechnology {
             event.accept(ModBlocks.ARGENCAD_ORE);
             event.accept(ModBlocks.DEEPSLATE_ARGENCAD_ORE);
             event.accept(ModItems.BOOMWHACKER);
+            event.accept(ModBlocks.PERCUSSIVE_CASING);
         }
     }
 
