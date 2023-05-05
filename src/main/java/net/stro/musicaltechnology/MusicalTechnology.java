@@ -14,6 +14,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.stro.musicaltechnology.block.ModBlocks;
 import net.stro.musicaltechnology.item.ModCreativeModeTabs;
 import net.stro.musicaltechnology.item.ModItems;
+import net.stro.musicaltechnology.sound.ModSounds;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -27,6 +28,7 @@ public class MusicalTechnology {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

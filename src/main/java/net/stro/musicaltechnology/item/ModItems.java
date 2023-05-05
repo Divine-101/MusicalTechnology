@@ -3,16 +3,13 @@ package net.stro.musicaltechnology.item;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.stro.musicaltechnology.MusicalTechnology;
-
-import java.math.BigInteger;
+import net.stro.musicaltechnology.item.custom.BoomwhackerItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -23,7 +20,7 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_ARGENCAD = ITEMS.register("raw_argencad",
             () -> new Item(new Properties()));
     public static final RegistryObject<Item> BOOMWHACKER = ITEMS.register("boomwhacker",
-            () -> new SwordItem(Tiers.STONE, 3, 0, new Item.Properties().stacksTo(1).durability(251)));
+            () -> new BoomwhackerItem(Tiers.STONE, 3, 0, new Item.Properties().stacksTo(1).durability(251)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
